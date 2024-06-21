@@ -8,8 +8,8 @@
 </head>
 <body>
     <h1>Sök Läkemedel</h1>
-    <input type="text" id="search" placeholder="Ange läkemedelsnamn">
-    <button onclick="searchMedication()">Sök</button>
+    <input type="text" id="search" placeholder="Ange läkemedelsnamn" onkeyup="filterMedications()">
+    <ul id="medication-list"></ul>
     <div id="result"></div>
     <script src="script.js"></script>
 </body>
