@@ -1,29 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-
-h1 {
-    color: #333;
-}
-
-input {
-    padding: 10px;
-    font-size: 16px;
-}
-
-button {
-    padding: 10px;
-    font-size: 16px;
-}
-
-#result {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #fff
-
 const medications = {
     "paracetamol": "Paracetamol används för att lindra smärta och sänka feber. Ta 1-2 tabletter var 4-6 timme, men inte mer än 8 tabletter per dag.",
     "ibuprofen": "Ibuprofen är ett antiinflammatoriskt läkemedel som används för att behandla smärta och inflammation. Ta 1 tablett var 6-8 timme, men inte mer än 3 tabletter per dag.",
@@ -61,7 +35,7 @@ function filterMedications() {
 
     for (let i = 0; i < listItems.length; i++) {
         let listItem = listItems[i];
-        if (listItem.textContent.toLowerCase().indexOf(searchInput) > -1) {
+        if (listItem.textContent.toLowerCase().includes(searchInput)) {
             listItem.style.display = '';
         } else {
             listItem.style.display = 'none';
