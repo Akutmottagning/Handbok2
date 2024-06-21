@@ -1,10 +1,10 @@
 const medications = {
-    "paracetamol": "Paracetamol används för att lindra smärta och sänka feber. Ta 1-2 tabletter var 4-6 timme, men inte mer än 8 tabletter per dag.",
-    "ibuprofen": "Ibuprofen är ett antiinflammatoriskt läkemedel som används för att behandla smärta och inflammation. Ta 1 tablett var 6-8 timme, men inte mer än 3 tabletter per dag.",
-    "acetylsalicylsyra": "Acetylsalicylsyra används för att behandla smärta, feber och inflammation. Ta 1-2 tabletter var 4-6 timme, men inte mer än 8 tabletter per dag.",
-    "diklofenak": "Diklofenak används för att behandla smärta och inflammation. Ta 1 tablett var 8-12 timme, men inte mer än 3 tabletter per dag.",
-    "naproxen": "Naproxen används för att lindra smärta och inflammation. Ta 1 tablett var 8-12 timme, men inte mer än 2 tabletter per dag."
-    // Lägg till fler läkemedel och anvisningar här
+    "Acetylcystein": "Indikation: Mukusreglerande vid inhalation samt antidot till paracetamol. Som antidot: Dos och hastighet ordineras av läkare baserat på patientens vikt. ...",
+    "Aciklovir": "Indikation: Virushämmande medel för systemiskt bruk. Geavir = Aciklovir (dock olika spädning). Spädning nedan enligt FASS: ...",
+    "Actilyse": "Indikation: Trombolytisk behandling vid akut hjärtinfarkt lungemboli och ischemisk stroke. Dosering: Alteplas (Actilyse) ges i dosen 09 mg/kg maxdos 90 mg. ...",
+    "Adenosin": "Indikation: Antiarytmika och diagnostikum. Avbrytande av paroxysmal supraventrikulär takykardi innefattande AV-noden. Ges vid arytmi. ...",
+    "Adrenalin": "Indikation: Katekolamin som stimulerar det sympatiska nervsystemet varvid hjärtfrekvens minutvolym och koronargenomblödning ökar. Bronkialmuskulaturen relaxeras och en avsvällning av bronkial-slemhinnan åstadkommes genom kärlkonstriktion. ...",
+    // Lägg till fler läkemedel här
 };
 
 // Funktion för att fylla listan med läkemedel
