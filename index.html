@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +7,40 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Sök Läkemedel</h1>
-    <input type="text" id="search" placeholder="Ange läkemedelsnamn" onkeyup="filterMedications()">
-    <ul id="medication-list"></ul>
-    <div id="result"></div>
+    <div class="container">
+        <h1>Läkemedelsanvisningar</h1>
+        <input type="text" id="searchInput" placeholder="Sök läkemedel...">
+        <ul id="medicationsList"></ul>
+    </div>
+
     <script src="script.js"></script>
+    <script>
+        const medicationsList = document.getElementById('medicationsList');
+        const searchInput = document.getElementById('searchInput');
+
+        function displayMedications(meds) {
+            medicationsList.innerHTML = '';
+            for (const [key, value] of Object.entries(meds)) {
+                const li = document.createElement('li');
+                li.innerHTML = `<strong>${key}</strong> (${value.location}) - ${value.details}`;
+                medicationsList.appendChild(li);
+            }
+        }
+
+        function filterMedications() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const filteredMedications = Object.fromEntries(
+                Object.entries(medications).filter(([key, value]) => 
+                    key.toLowerCase().includes(searchTerm) ||
+                    value.details.toLowerCase().includes(searchTerm)
+                )
+            );
+            displayMedications(filteredMedications);
+        }
+
+        searchInput.addEventListener('input', filterMedications);
+
+        displayMedications(medications);
+    </script>
 </body>
 </html>
