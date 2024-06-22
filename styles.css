@@ -15,13 +15,13 @@ h1 {
     font-size: 16px;
 }
 
-.drug {
+.drugs {
     margin: 10px 0;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
 
-.drug h2 {
+.drugs h2 {
     margin: 0;
 }
