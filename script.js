@@ -419,7 +419,7 @@ function filterList() {
 
 function showModal(title, details) {
     document.getElementById('modal-title').textContent = title;
-    document.getElementById('modal-details').textContent = details;
+    document.getElementById('modal-details').innerHTML = details;  // Ändrat till innerHTML
     document.getElementById('modal').style.display = 'block';
 }
 
