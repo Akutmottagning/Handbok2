@@ -387,7 +387,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             <span style="color: green;">Dosering:</span> Dos och hastighet ordineras av läkare, baserat på patientens vikt. 
             <span style="color: blue;">Spädning:</span> Enligt Giftinfo (överdos av icke-depotpreparat): Dos 1: Intravenöst ges först 200 mg/kg i 500 ml glukos 50 mg/ml eller isoton NaCl under 4 timmar (50 mg/kg/timme). Dos 2: 6,25 mg/kg/timme under 16 timmar eller längre, se nedan (praktiskt är att 75 mg/kg löses i 500 ml och ges under varje 12-timmarsperiod). Eventuellt ”förlängd behandling” kan förekomma r/t PK-INR och levervärden. 
             <span style="color: purple;">Biverkningar:</span> illamående, flush, klåda, urtikaria. Allvarliga allergiska biverkningar av acetylcystein såsom angioödem, bronkospasm och hypotension kan förekomma. Den inledande behandlingen (startdos) kan ge perifert vasodilaterande effekt som behandlas med att infusionen tillfälligt avbrytes 30-60 minuter. OBS! Vid biverkningar (illamående, urtikaria, klåda vanligast) stäng tillfälligt av infusionen och ge antihistamin (t ex munsönderfallande desloratadin 10 mg eller intravenöst Tavegyl 2 mg). RING GIC.`
-            },
+        }
         // Lägg till fler läkemedel här på samma sätt...
     ];
 
