@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             <span style="color: green;">Dosering:</span> Hjärtstillestånd: 1 mg intravenöst var 3-5 minut. Anafylaxi: 0.3-0.5 mg intramuskulärt. 
             <span style="color: blue;">Spädning:</span> Kan ges utan spädning eller spädas för infusion. 
             <span style="color: purple;">Biverkningar:</span> Takykardi, hypertension, huvudvärk.`
-        }
+        },
         {
             name: "Furosemide 10 mg/ml => Blå lkm-rum",
             details: `<span style="color: red;">Indikation:</span> Ödem, akut lungödem, hypertoni. 
