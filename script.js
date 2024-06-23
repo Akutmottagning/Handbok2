@@ -380,7 +380,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             <span style="color: green;">Dosering:</span> Induktion: 1-2 mg/kg intravenöst. Underhåll: 4-12 mg/kg/h infusion. 
             <span style="color: blue;">Spädning:</span> Ges utan spädning. 
             <span style="color: purple;">Biverkningar:</span> Hypotension, bradykardi, smärta vid injektion.`
-        },
+        }
         
         
         
