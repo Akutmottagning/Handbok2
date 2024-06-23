@@ -13,13 +13,16 @@
             margin: 0;
             padding: 20px;
         }
-        input[type="text"] {
+        input[type="text"], textarea {
             width: 100%;
             padding: 10px;
             margin-bottom: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 16px;
+        }
+        textarea[readonly] {
+            background-color: #e9ecef; /* Ljusgrå bakgrundsfärg för readonly textarea */
         }
         ul {
             list-style: none;
@@ -53,6 +56,9 @@
         }
         #modal h2 {
             margin-top: 0;
+        }
+        #modal p {
+            user-select: text; /* Gör texten valbar för kopiering */
         }
         #modal button {
             background-color: #007BFF;
@@ -94,7 +100,7 @@
 <body>
     <button id="random-medication">Slumpa läkemedel</button>
     <button id="feedback-button" onclick="location.href='mailto:akutmottagning@hotmail.com'">Ge feedback</button>
-    <input type="text" id="search" placeholder="Sök läkemedel" oninput="filterList()">
+    <textarea id="search" placeholder="Sök läkemedel" oninput="filterList()" readonly>Text som endast är synlig och inte redigerbar</textarea>
     <ul id="medications-list"></ul>
 
     <!-- Modal for displaying medication details -->
