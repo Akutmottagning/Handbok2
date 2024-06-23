@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
@@ -75,23 +75,24 @@
             background-color: rgba(0, 0, 0, 0.5);
             z-index: 500;
         }
-        .random-button {
-            background-color: #28a745;
+        #random-button {
+            display: block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
             color: white;
             border: none;
-            padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
-            margin-bottom: 20px;
-            font-size: 16px;
+            transition: background-color 0.3s ease;
         }
-        .random-button:hover {
-            background-color: #218838;
+        #random-button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <button class="random-button" onclick="showRandomMedication()">Random Läkemedel</button>
+    <button id="random-button" onclick="showRandomMedication()">Slumpa läkemedel</button>
     <input type="text" id="search" placeholder="Sök läkemedel" oninput="filterList()">
     <ul id="medications-list"></ul>
 
