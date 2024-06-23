@@ -392,6 +392,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // More medications...
     ];
 
+document.getElementById('random-medication').addEventListener('click', () => {
+    const randomIndex = Math.floor(Math.random() * medications.length);
+    const randomMedication = medications[randomIndex];
+    showModal(randomMedication.name, randomMedication.details);
+});
+    
     const medicationsList = document.getElementById('medications-list');
 
     medications.forEach(medication => {
