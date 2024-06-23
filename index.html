@@ -81,9 +81,12 @@
             background-color: rgba(0, 0, 0, 0.5);
             z-index: 500;
         }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
         #random-medication, #feedback-button {
-            display: block;
-            margin: 20px 0;
             padding: 10px 20px;
             background-color: #007BFF;
             color: white;
@@ -98,8 +101,10 @@
     </style>
 </head>
 <body>
-    <button id="random-medication">Slumpa läkemedel</button>
-    <button id="feedback-button" onclick="location.href='mailto:akutmottagning@hotmail.com'">Ge feedback</button>
+    <div class="button-container">
+        <button id="random-medication">Slumpa läkemedel</button>
+        <button id="feedback-button" onclick="location.href='mailto:akutmottagning@hotmail.com'">Ge feedback</button>
+    </div>
     <textarea id="search" placeholder="Sök läkemedel" oninput="filterList()" readonly>Text som endast är synlig och inte redigerbar</textarea>
     <ul id="medications-list"></ul>
 
