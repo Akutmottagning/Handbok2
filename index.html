@@ -75,9 +75,23 @@
             background-color: rgba(0, 0, 0, 0.5);
             z-index: 500;
         }
+        .random-button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .random-button:hover {
+            background-color: #218838;
+        }
     </style>
 </head>
 <body>
+    <button class="random-button" onclick="showRandomMedication()">Random Läkemedel</button>
     <input type="text" id="search" placeholder="Sök läkemedel" oninput="filterList()">
     <ul id="medications-list"></ul>
 
