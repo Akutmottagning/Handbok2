@@ -416,11 +416,13 @@ function filterList() {
 }
 
 function showModal(title, details) {
-    document.getElementById('modal-title').textContent = title;
-    document.getElementById('modal-details').innerHTML = details;  // Ändrat till innerHTML
+    document.getElementById('modal-title').textContent = title; // Behåll textContent för titeln
+    document.getElementById('modal-details').innerHTML = details; // Byt till innerHTML för detaljer
     document.getElementById('modal').style.display = 'block';
+    document.getElementById('modal-overlay').style.display = 'block';
 }
 
 function closeModal() {
     document.getElementById('modal').style.display = 'none';
+    document.getElementById('modal-overlay').style.display = 'none';
 }
